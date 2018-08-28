@@ -7,5 +7,12 @@
 - develop: the branch for development
 - master: used to deploy final merged code to the sulmanbaig.com server
 
+# RSpec Testing
+- run `bundle install`
+- run `rails db:migrate`
+- run `bundle exec rspec`
+or to use `spring` gem run `bundle exec spring binstub rspec`
+- then you can run `bin/rspec`
+
 # Author
 [@sulmanweb](http://www.sulmanbaig.com)
