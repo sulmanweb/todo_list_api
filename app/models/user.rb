@@ -9,6 +9,9 @@ class User < ApplicationRecord
   # callbacks
   before_save :convert_auth_to_small_letters
 
+  # Relationships
+  has_many :lists, dependent: :destroy
+
   private
 
   # whether password is required field or not
