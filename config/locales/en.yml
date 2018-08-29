@@ -1,2 +1,6 @@
 en:
   app_name: "ToDo List"
+
+  errors:
+    not_found: "Sorry the page you requested could not be found."
+    internal_server_error: "Sorry there was some problem with the server. Devs have been notified and problem will be resolved soon."
