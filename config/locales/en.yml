@@ -4,3 +4,7 @@ en:
   errors:
     not_found: "Sorry the page you requested could not be found."
     internal_server_error: "Sorry there was some problem with the server. Devs have been notified and problem will be resolved soon."
+
+    users:
+      format_email: "must be valid address."
+      format_password: "must be 8 to 72 characters with atleast one numeric character."
