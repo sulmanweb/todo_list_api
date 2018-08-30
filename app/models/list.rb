@@ -3,6 +3,7 @@ class List < ApplicationRecord
 
   # Relationships
   belongs_to :user
+  has_many :items, dependent: :destroy
 
   # validations
   validates :name, presence: true
