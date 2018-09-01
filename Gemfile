@@ -33,6 +33,8 @@ group :development do
   gem 'spring', '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
   gem 'spring-commands-rspec', '1.0.4'
+  # to view emails in browser
+  gem 'letter_opener', '1.6.0'
 end
 
 
