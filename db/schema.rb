@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_30_173207) do
+ActiveRecord::Schema.define(version: 2018_09_01_042808) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,18 @@ ActiveRecord::Schema.define(version: 2018_08_30_173207) do
     t.index ["user_id"], name: "index_lists_on_user_id"
   end
 
+  create_table "sessions", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "uid"
+    t.boolean "status", default: true
+    t.datetime "last_used_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["status"], name: "index_sessions_on_status"
+    t.index ["uid"], name: "index_sessions_on_uid", unique: true
+    t.index ["user_id"], name: "index_sessions_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email", default: "", null: false
@@ -46,4 +58,5 @@ ActiveRecord::Schema.define(version: 2018_08_30_173207) do
   add_foreign_key "items", "lists"
   add_foreign_key "items", "users"
   add_foreign_key "lists", "users"
+  add_foreign_key "sessions", "users"
 end

@@ -12,6 +12,7 @@ class User < ApplicationRecord
   # Relationships
   has_many :lists, dependent: :destroy
   has_many :items, dependent: :destroy
+  has_many :sessions, dependent: :destroy
 
   private
 
