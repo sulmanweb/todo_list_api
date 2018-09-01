@@ -8,3 +8,7 @@ en:
     users:
       format_email: "must be valid address."
       format_password: "must be 8 to 72 characters with atleast one numeric character."
+      invalid_credentials: "Invalid Credentials provided"
+      invalid_token: "The token provided is invalid"
+      token_missing: "Token required is not present"
+      late_token: "Sorry your token lifetime is gone. Please regenerate."
