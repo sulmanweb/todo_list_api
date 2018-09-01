@@ -12,3 +12,6 @@ en:
       invalid_token: "The token provided is invalid"
       token_missing: "Token required is not present"
       late_token: "Sorry your token lifetime is gone. Please regenerate."
+
+  pundit:
+    default: "You are not allowed to perform this action."

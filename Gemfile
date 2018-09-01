@@ -23,6 +23,8 @@ gem 'jwt', '2.1.0'
 gem 'simple_command', '0.0.9'
 # for env variables
 gem 'figaro', '1.1.1'
+# for authorizations
+gem 'pundit', '2.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

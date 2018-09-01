@@ -1,5 +1,6 @@
 require 'user.rb'
 class Auth::RegistrationsController < ApplicationController
+  # TODO add forget password services
 
   before_action :authenticate_user, only: [:destroy]
 
