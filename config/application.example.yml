@@ -1,0 +1,10 @@
+development:
+  DATABASE_USERNAME: abcd
+  DATABASE_PASSWORD: abcd
+  jwt_secret: 7d9fe52d6d2c6ea97542ea8719c42e606c83d7aeeabf7cd09736d130a3858bb83db26480228a28f40324a46ab431f502b8cb1ccf705b1d0190b7b3a29eb1fa85
+test:
+  DATABASE_USERNAME: abcd
+  DATABASE_PASSWORD: abcd
+  jwt_secret: 7d9fe52d6d2c6ea97542ea8719c42e606c83d7aeeabf7cd09736d130a3858bb83db26480228a28f40324a46ab431f502b8cb1ccf705b1d0190b7b3a29eb1fa85
+  # Used as the base secret for all MessageVerifiers in Rails, including the one protecting cookies.
+secret_key_base: 7d9fe52d6d2c6ea97542ea8719c42e606c83d7aeeabf7cd09736d130a3858bb83db26480228a28f40324a46ab431f502b8cb1ccf705b1d0190b7b3a29eb1fa85

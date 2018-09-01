@@ -21,6 +21,8 @@ gem 'rack-cors', '1.0.2'
 gem 'jwt', '2.1.0'
 # for service objects
 gem 'simple_command', '0.0.9'
+# for env variables
+gem 'figaro', '1.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

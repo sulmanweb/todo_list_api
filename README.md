@@ -9,6 +9,7 @@
 
 # RSpec Testing
 - run `bundle install`
+- change `application.example.yml` to `application.yml` with respect to your system settings
 - run `rails db:migrate`
 - run `bundle exec rspec`
 or to use `spring` gem run `bundle exec spring binstub rspec`
